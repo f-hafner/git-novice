@@ -766,6 +766,7 @@ web-hosted private repositories.</p>
 <h3 id="02-setup-headingInstructor1">
 <a href="02-setup.html#headingInstructor1">Instructor Note</a><a class="anchor" aria-label="anchor" href="#02-setup-headingInstructor1"></a>
 </h3>
+<p>Plan &amp; context</p>
 <p><strong>why version control?</strong></p>
 <ul>
 <li>unlimited “undo” and allows many people to work in parallel</li>
@@ -781,7 +782,7 @@ editor</li>
 </ul>
 <hr>
 <br><h3 id="02-setup-headingInstructor2">
-<a href="02-setup.html#headingInstructor2">Instructor Note</a><a class="anchor" aria-label="anchor" href="#02-setup-headingInstructor2"></a>
+<a href="02-setup.html#headingInstructor2">Explain</a><a class="anchor" aria-label="anchor" href="#02-setup-headingInstructor2"></a>
 </h3>
 <ul>
 <li>we will interact with github: email should be the same as in the GH
@@ -800,7 +801,7 @@ account</li>
 </ul>
 <hr>
 <br><h3 id="02-setup-headingInstructor3">
-<a href="02-setup.html#headingInstructor3">Instructor Note</a><a class="anchor" aria-label="anchor" href="#02-setup-headingInstructor3"></a>
+<a href="02-setup.html#headingInstructor3">Set an editor</a><a class="anchor" aria-label="anchor" href="#02-setup-headingInstructor3"></a>
 </h3>
 <p>We now configure the editor with which we edit git file. There are
 many options, but we use <code>nano</code> for this course.</p>
@@ -808,7 +809,7 @@ many options, but we use <code>nano</code> for this course.</p>
 one.</p>
 <hr>
 <br><h3 id="02-setup-headingInstructor4">
-<a href="02-setup.html#headingInstructor4">Instructor Note</a><a class="anchor" aria-label="anchor" href="#02-setup-headingInstructor4"></a>
+<a href="02-setup.html#headingInstructor4">Branches and naming</a><a class="anchor" aria-label="anchor" href="#02-setup-headingInstructor4"></a>
 </h3>
 <ul>
 <li>explain branches
@@ -823,10 +824,10 @@ requires a change in the setup as follows.</li>
 </ul>
 <hr>
 <br><h3 id="02-setup-headingInstructor5">
-<a href="02-setup.html#headingInstructor5">Instructor Note</a><a class="anchor" aria-label="anchor" href="#02-setup-headingInstructor5"></a>
+<a href="02-setup.html#headingInstructor5">Review our setup</a><a class="anchor" aria-label="anchor" href="#02-setup-headingInstructor5"></a>
 </h3>
 <ul>
-<li>we can now review the settings in two ways</li>
+<li>there are two ways to review it</li>
 <li>the second is safer because we do not edit the file</li>
 <li>make sure that the user name and email are correct (your own!)</li>
 <li>if not, change with the commands from before</li>
@@ -837,13 +838,13 @@ requires a change in the setup as follows.</li>
 <h3 id="03-create-headingInstructor1">
 <a href="03-create.html#headingInstructor1">Instructor Note</a><a class="anchor" aria-label="anchor" href="#03-create-headingInstructor1"></a>
 </h3>
+<p>Context &amp; plan</p>
 <p>We’ve set up git in the previous episode. Now let’s use it!</p>
 <p><strong>Goal: Create a local git repository</strong></p>
 <hr>
 <br><h3 id="03-create-headingInstructor2">
-<a href="03-create.html#headingInstructor2">Instructor Note</a><a class="anchor" aria-label="anchor" href="#03-create-headingInstructor2"></a>
+<a href="03-create.html#headingInstructor2">What have we just done?</a><a class="anchor" aria-label="anchor" href="#03-create-headingInstructor2"></a>
 </h3>
-<p>what have we just done?</p>
 <ul>
 <li>created a new repository</li>
 <li>important: it will also include subdirectories and their files</li>
@@ -853,9 +854,8 @@ completely different processes</li>
 </ul>
 <hr>
 <br><h3 id="03-create-headingInstructor3">
-<a href="03-create.html#headingInstructor3">Instructor Note</a><a class="anchor" aria-label="anchor" href="#03-create-headingInstructor3"></a>
+<a href="03-create.html#headingInstructor3">What do we see here?</a><a class="anchor" aria-label="anchor" href="#03-create-headingInstructor3"></a>
 </h3>
-<p>what do we see here?</p>
 <ul>
 <li>special subdirectory <code>.git</code>
 </li>
@@ -869,19 +869,31 @@ completely different processes</li>
 <h3 id="04-changes-headingInstructor1">
 <a href="04-changes.html#headingInstructor1">Instructor Note</a><a class="anchor" aria-label="anchor" href="#04-changes-headingInstructor1"></a>
 </h3>
-<p>Open a new file; we use the <code>nano</code> editor, but it can be
-any, and does not have to be the same as the <code>core.editor</code>
-from git that we configured earlier.</p>
+<p>Context &amp; plan</p>
+<p>After we created the repository in previous episode, we now use git
+to track changes.</p>
 <hr>
 <br><h3 id="04-changes-headingInstructor2">
-<a href="04-changes.html#headingInstructor2">Instructor Note</a><a class="anchor" aria-label="anchor" href="#04-changes-headingInstructor2"></a>
+<a href="04-changes.html#headingInstructor2">Open a new file</a><a class="anchor" aria-label="anchor" href="#04-changes-headingInstructor2"></a>
 </h3>
-<p>Explain the output - branch - no commits at the moment -
-<code>mars.txt</code>: any new file that we create is not tracked by
-default by git - see also the <code>git add</code> statement</p>
+<p>We use the <code>nano</code> editor, but it can be any, and it does
+not have to be the same as the <code>core.editor</code> from git that we
+configured earlier.</p>
 <hr>
 <br><h3 id="04-changes-headingInstructor3">
-<a href="04-changes.html#headingInstructor3">Instructor Note</a><a class="anchor" aria-label="anchor" href="#04-changes-headingInstructor3"></a>
+<a href="04-changes.html#headingInstructor3">Explain the output</a><a class="anchor" aria-label="anchor" href="#04-changes-headingInstructor3"></a>
+</h3>
+<ul>
+<li>branch</li>
+<li>no commits at the moment</li>
+<li>
+<code>mars.txt</code>: any new file that we create is not tracked by
+default by git</li>
+<li>see also the <code>git add</code> statement</li>
+</ul>
+<hr>
+<br><h3 id="04-changes-headingInstructor4">
+<a href="04-changes.html#headingInstructor4">Explain the output</a><a class="anchor" aria-label="anchor" href="#04-changes-headingInstructor4"></a>
 </h3>
 <ul>
 <li>Highlight the change in the output message</li>
@@ -889,10 +901,9 @@ default by git - see also the <code>git add</code> statement</p>
 <li>can do that as follows</li>
 </ul>
 <hr>
-<br><h3 id="04-changes-headingInstructor4">
-<a href="04-changes.html#headingInstructor4">Instructor Note</a><a class="anchor" aria-label="anchor" href="#04-changes-headingInstructor4"></a>
+<br><h3 id="04-changes-headingInstructor5">
+<a href="04-changes.html#headingInstructor5">what did we just do?</a><a class="anchor" aria-label="anchor" href="#04-changes-headingInstructor5"></a>
 </h3>
-<p><strong>what did we just do?</strong></p>
 <ul>
 <li>git takes things that were <code>add</code>ed and stores a permanent
 copy in the <code>.git</code> directory</li>
@@ -906,8 +917,8 @@ copy in the <code>.git</code> directory</li>
 </li>
 </ul>
 <hr>
-<br><h3 id="04-changes-headingInstructor5">
-<a href="04-changes.html#headingInstructor5">Instructor Note</a><a class="anchor" aria-label="anchor" href="#04-changes-headingInstructor5"></a>
+<br><h3 id="04-changes-headingInstructor6">
+<a href="04-changes.html#headingInstructor6">Explain the output</a><a class="anchor" aria-label="anchor" href="#04-changes-headingInstructor6"></a>
 </h3>
 <ul>
 <li>no changes for a new commit</li>
@@ -916,18 +927,39 @@ copy in the <code>.git</code> directory</li>
 made</li>
 </ul>
 <hr>
-<br><h3 id="04-changes-headingInstructor6">
-<a href="04-changes.html#headingInstructor6">Instructor Note</a><a class="anchor" aria-label="anchor" href="#04-changes-headingInstructor6"></a>
-</h3>
-<p>line by line - output similar to the <code>diff</code> command in
-Unix - comparing versions of the file: unique labels, generated by
-computer - name of the changed file - last lines most important: shows
-the actual changes</p>
-<hr>
 <br><h3 id="04-changes-headingInstructor7">
-<a href="04-changes.html#headingInstructor7">Instructor Note</a><a class="anchor" aria-label="anchor" href="#04-changes-headingInstructor7"></a>
+<a href="04-changes.html#headingInstructor7">what do we see? – line by line</a><a class="anchor" aria-label="anchor" href="#04-changes-headingInstructor7"></a>
 </h3>
-<p>TODO: discuss staging area</p>
+<ul>
+<li>output similar to the <code>diff</code> command in Unix</li>
+<li>comparing versions of the file: unique labels, generated by
+computer</li>
+<li>name of the changed file</li>
+<li>last lines most important: shows the actual changes</li>
+</ul>
+<hr>
+<br><h3 id="04-changes-headingInstructor8">
+<a href="04-changes.html#headingInstructor8">what happened?</a><a class="anchor" aria-label="anchor" href="#04-changes-headingInstructor8"></a>
+</h3>
+<ul>
+<li>we could not <code>commit</code> without having <code>added</code>
+anything</li>
+<li>allows to commit changes in stages
+<ul>
+<li>we added text and a new reference to our thesis</li>
+<li>but we have not finished the text bit</li>
+<li>first update bibliographic database</li>
+<li>commit the change in the thesis later on</li>
+</ul>
+</li>
+</ul>
+<p><strong>background: git staging area. what is it and why
+useful?</strong></p>
+<ul>
+<li>intermediate step between file changes and a commit</li>
+<li>we could commit everything at once, but often it is better to stage
+things manually</li>
+</ul>
 <hr>
 <br></section><section id="05-history"><h2 class="section-heading"><a href="05-history.html">Exploring History</a></h2>
 <hr class="half-width"></section><section id="06-ignore"><h2 class="section-heading"><a href="06-ignore.html">Ignoring Things</a></h2>
