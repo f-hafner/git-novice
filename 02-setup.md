@@ -142,7 +142,7 @@ If you're familiar with other editors, go ahead with a that different one.
 
 
 ```bash
-$ git config --global core.editor "nano -w"`  
+$ git config --global core.editor "nano -w"  
 ```
 
 :::::::::::::::::::::::::::::::::::::::::  callout
