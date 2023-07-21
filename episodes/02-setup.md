@@ -52,6 +52,9 @@ $ git config --global user.email "vlad@tran.sylvan.ia"
 
 - we will interact with github: email should be the same as in the GH account
 - keep your mail private? -- you can do it on github 
+- highlight the structure of git commands, they are always the same: `git verb options`
+    - `verb` = what do we want to do?
+    - `options` = additional (necessary) information 
 - skip line endings
 
 :::::::::::::::::::::::::::::::::::::::::::::::::
@@ -128,6 +131,19 @@ Dracula also has to set his favorite text editor, following this table:
 | VS Code                               | `$ git config --global core.editor "code --wait"`                      | 
 
 It is possible to reconfigure the text editor for Git whenever you want to change it.
+
+::::::::::::::::::::::::::::::::::::: instructor
+
+We now configure the editor with which we edit git file. There are many options, but we use `nano` for this course.
+
+If you're familiar with other editors, go ahead with a that different one.
+
+:::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+```bash
+$ git config --global core.editor "nano -w"`  
+```
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
