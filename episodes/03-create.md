@@ -41,7 +41,7 @@ First, let's create a new directory in the `Desktop` folder for our work and the
 
 ::::::::::::::::::::::::::::::::::::: instructor
 
-#### Context & plan
+Context & plan
 
 We've set up git in the previous episode. Now let's use it!
 
@@ -65,7 +65,7 @@ $ git init
 
 ::::::::::::::::::::::::::::::::::::: instructor
 
-#### What have we just done?
+## What have we just done?
 
 - created a new repository
 - important: it will also include subdirectories and their files
@@ -102,7 +102,7 @@ $ ls -a
 
 ::::::::::::::::::::::::::::::::::::: instructor
 
-#### What do we see here?
+## What do we see here?
 
 - special subdirectory `.git`
 - hidden

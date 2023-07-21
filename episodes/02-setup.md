@@ -31,7 +31,7 @@ Dracula sets up his new laptop:
 
 ::::::::::::::::::::::::::::::::::::: instructor
 
-#### Plan & context
+Plan & context
 
 **why version control?**
 
@@ -52,7 +52,7 @@ $ git config --global user.email "vlad@tran.sylvan.ia"
 
 ::::::::::::::::::::::::::::::::::::: instructor
 
-#### Explain
+## Explain
 
 - we will interact with github: email should be the same as in the GH account
 - keep your mail private? -- you can do it on github 
@@ -138,7 +138,7 @@ It is possible to reconfigure the text editor for Git whenever you want to chang
 
 ::::::::::::::::::::::::::::::::::::: instructor
 
-#### Set an editor
+## Set an editor
 
 We now configure the editor with which we edit git file. 
 There are many options, but we use `nano` for this course.
@@ -169,7 +169,7 @@ it matches the cloud service he will eventually use.
 
 ::::::::::::::::::::::::::::::::::::: instructor
 
-#### Branches and naming
+## Branches and naming
 
 - explain branches
     - a commit is one record of a source file change 
@@ -209,7 +209,7 @@ configuration, the `init.defaultBranch` value defaults to `master`.
 
 ::::::::::::::::::::::::::::::::::::: instructor
 
-#### Review our setup
+## Review our setup
 
 - there are two ways to review it
 - the second is safer because we do not edit the file 
