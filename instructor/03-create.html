@@ -314,7 +314,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Creating a Repository</h1>
-        <p> Last updated on 2023-07-20 | 
+        <p> Last updated on 2023-07-21 | 
         
         <a href="https://github.com/swcarpentry/git-novice/edit/teaching/episodes/03-create.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -367,6 +367,22 @@ Luc Viatour / <a href="https://lucnix.be/" class="external-link">https://lucnix.
 <p>First, let’s create a new directory in the <code>Desktop</code>
 folder for our work and then change the current working directory to the
 newly created one:</p>
+<div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
+  <h3 class="accordion-header" id="headingInstructor1">
+  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>
+  Instructor Note
+  </h3>
+</button>
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div class="accordion-body">
+<p>We’ve set up git in the previous episode. Now let’s use it!</p>
+<p><strong>Goal: Create a local git repository</strong></p>
+</div>
+</div>
+</div>
+</div>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -380,6 +396,26 @@ store versions of our files:</p>
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git init</span></code></pre>
+</div>
+<div id="accordionInstructor2" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor2" aria-expanded="false" aria-controls="collapseInstructor2">
+  <h3 class="accordion-header" id="headingInstructor2">
+  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>
+  Instructor Note
+  </h3>
+</button>
+<div id="collapseInstructor2" class="accordion-collapse collapse" aria-labelledby="headingInstructor2" data-bs-parent="#accordionInstructor2">
+<div class="accordion-body">
+<p>what have we just done?</p>
+<ul><li>created a new repository</li>
+<li>important: it will also include subdirectories and their files</li>
+<li>making a directory <code>planets</code> and making the repo are
+completely different processes</li>
+<li>do we see the changes we made?</li>
+</ul></div>
+</div>
+</div>
 </div>
 <p>It is important to note that <code>git init</code> will create a
 repository that can include subdirectories and their files—there is no
@@ -407,6 +443,26 @@ called <code>.git</code>:</p>
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="output" tabindex="0"><code>.	..	.git</code></pre>
+</div>
+<div id="accordionInstructor3" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor3" aria-expanded="false" aria-controls="collapseInstructor3">
+  <h3 class="accordion-header" id="headingInstructor3">
+  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>
+  Instructor Note
+  </h3>
+</button>
+<div id="collapseInstructor3" class="accordion-collapse collapse" aria-labelledby="headingInstructor3" data-bs-parent="#accordionInstructor3">
+<div class="accordion-body">
+<p>what do we see here?</p>
+<ul><li>special subdirectory <code>.git</code>
+</li>
+<li>hidden</li>
+<li>all things we do in this repo in git are stored there</li>
+<li>if we delete it, we lose it all!</li>
+</ul></div>
+</div>
+</div>
 </div>
 <p>Git uses this special subdirectory to store all the information about
 the project, including the tracked files and sub-directories located
@@ -481,7 +537,7 @@ the <code>moons</code> subdirectory?</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>No. Dracula does not need to make the <code>moons</code> subdirectory
 a Git repository because the <code>planets</code> repository can track
@@ -532,7 +588,7 @@ in the <code>moons</code> subdirectory?</p>
   Solution – USE WITH CAUTION!
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <div class="section level3">
 <h3 id="background">Background<a class="anchor" aria-label="anchor" href="#background"></a></h3>
@@ -642,7 +698,7 @@ directory.</li>
   "url": "https://swcarpentry.github.io/git-novice/instructor/03-create.html",
   "identifier": "https://swcarpentry.github.io/git-novice/instructor/03-create.html",
   "dateCreated": "2014-12-04",
-  "dateModified": "2023-07-20",
+  "dateModified": "2023-07-21",
   "datePublished": "2023-07-21"
 }
 
