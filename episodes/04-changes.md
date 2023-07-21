@@ -20,6 +20,15 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+::::::::::::::::::::::::::::::::::::: instructor
+
+#### Context & plan
+
+After we created the repository in previous episode, 
+we now use git to track changes.
+
+:::::::::::::::::::::::::::::::::::::::::::::::::
+
 First let's make sure we're still in the right directory.
 You should be in the `planets` directory.
 
@@ -37,7 +46,8 @@ In particular, this does not have to be the `core.editor` you set globally earli
 
 #### Open a new file
 
-we use the `nano` editor, but it can be any, and does not have to be the same as the `core.editor` from git that we configured earlier.
+We use the `nano` editor, but it can be any, 
+and it does not have to be the same as the `core.editor` from git that we configured earlier.
 
 :::::::::::::::::::::::::::::::::::::::::::::::::
 

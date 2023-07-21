@@ -41,6 +41,8 @@ First, let's create a new directory in the `Desktop` folder for our work and the
 
 ::::::::::::::::::::::::::::::::::::: instructor
 
+#### Context & plan
+
 We've set up git in the previous episode. Now let's use it!
 
 **Goal: Create a local git repository**
@@ -63,7 +65,7 @@ $ git init
 
 ::::::::::::::::::::::::::::::::::::: instructor
 
-what have we just done?
+#### What have we just done?
 
 - created a new repository
 - important: it will also include subdirectories and their files
@@ -71,6 +73,7 @@ what have we just done?
 - do we see the changes we made?
 
 :::::::::::::::::::::::::::::::::::::::::::::::::
+
 
 It is important to note that `git init` will create a repository that
 can include subdirectories and their files---there is no need to create
@@ -99,7 +102,7 @@ $ ls -a
 
 ::::::::::::::::::::::::::::::::::::: instructor
 
-what do we see here?
+#### What do we see here?
 
 - special subdirectory `.git`
 - hidden
