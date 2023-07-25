@@ -30,7 +30,7 @@ license: 'CC-BY 4.0'
 source: 'https://github.com/swcarpentry/git-novice'
 
 # Default branch of your lesson
-branch: 'teaching'
+branch: 'main'
 
 # Who to contact if there are any issues
 contact: 'team@carpentries.org'

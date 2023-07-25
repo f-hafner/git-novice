@@ -396,7 +396,7 @@
 <hr>
 <p> Last updated on 2023-07-20 | 
         
-        <a href="https://github.com/swcarpentry/git-novice/edit/teaching/episodes/01-basics.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <a href="https://github.com/swcarpentry/git-novice/edit/main/episodes/01-basics.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -511,7 +511,7 @@ changes?</p></li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ul>
 <li><p>Recovering the excellent version is only possible if you created
@@ -550,9 +550,9 @@ problems.</p></li>
 </div>
 </div></section><section id="aio-02-setup"><p>Content from <a href="02-setup.html">Setting Up Git</a></p>
 <hr>
-<p> Last updated on 2023-07-21 | 
+<p> Last updated on 2023-07-25 | 
         
-        <a href="https://github.com/swcarpentry/git-novice/edit/teaching/episodes/02-setup.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <a href="https://github.com/swcarpentry/git-novice/edit/main/episodes/02-setup.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -738,11 +738,6 @@ table:</p>
 </table>
 <p>It is possible to reconfigure the text editor for Git whenever you
 want to change it.</p>
-<div class="codewrapper sourceCode" id="cb4">
-<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git config <span class="at">--global</span> core.editor <span class="st">"nano -w"</span>  </span></code></pre>
-</div>
 <div id="exiting-vim" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -764,10 +759,10 @@ hit <kbd>Enter</kbd> or <kbd>↵</kbd> or on Macs, <kbd>Return</kbd>.</p>
 when you initialize any new repository. Dracula decides to use that
 feature to set it to <code>main</code> so it matches the cloud service
 he will eventually use.</p>
-<div class="codewrapper sourceCode" id="cb5">
+<div class="codewrapper sourceCode" id="cb4">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git config <span class="at">--global</span> init.defaultBranch main</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git config <span class="at">--global</span> init.defaultBranch main</span></code></pre>
 </div>
 <div id="default-git-branch-naming" class="callout callout">
 <div class="callout-square">
@@ -804,18 +799,18 @@ flag <code>--global</code> tells Git to use the settings for every
 project, in your user account, on this computer.</p>
 <p>Let’s review those settings and test our <code>core.editor</code>
 right away:</p>
-<div class="codewrapper sourceCode" id="cb6">
+<div class="codewrapper sourceCode" id="cb5">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git config <span class="at">--global</span> <span class="at">--edit</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git config <span class="at">--global</span> <span class="at">--edit</span></span></code></pre>
 </div>
 <p>Let’s close the file without making any additional changes. Remember,
 since typos in the config file will cause issues, it’s safer to view the
 configuration with:</p>
-<div class="codewrapper sourceCode" id="cb7">
+<div class="codewrapper sourceCode" id="cb6">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git config <span class="at">--list</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git config <span class="at">--list</span></span></code></pre>
 </div>
 <p>And if necessary, change your configuration using the same commands
 to choose another editor or update your email address. This can be done
@@ -830,18 +825,18 @@ as many times as you want.</p>
 <div class="callout-content">
 <p>In some networks you need to use a <a href="https://en.wikipedia.org/wiki/Proxy_server" class="external-link">proxy</a>. If this is
 the case, you may also need to tell Git about the proxy:</p>
+<div class="codewrapper sourceCode" id="cb7">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git config <span class="at">--global</span> http.proxy proxy-url</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git config <span class="at">--global</span> https.proxy proxy-url</span></code></pre>
+</div>
+<p>To disable the proxy, use</p>
 <div class="codewrapper sourceCode" id="cb8">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git config <span class="at">--global</span> http.proxy proxy-url</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git config <span class="at">--global</span> https.proxy proxy-url</span></code></pre>
-</div>
-<p>To disable the proxy, use</p>
-<div class="codewrapper sourceCode" id="cb9">
-<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git config <span class="at">--global</span> <span class="at">--unset</span> http.proxy</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git config <span class="at">--global</span> <span class="at">--unset</span> https.proxy</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git config <span class="at">--global</span> <span class="at">--unset</span> http.proxy</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git config <span class="at">--global</span> <span class="at">--unset</span> https.proxy</span></code></pre>
 </div>
 </div>
 </div>
@@ -858,21 +853,21 @@ the case, you may also need to tell Git about the proxy:</p>
 <code>git</code> command, you can access the relevant list of options
 typing <code>git &lt;command&gt; -h</code> or access the corresponding
 Git manual by typing <code>git &lt;command&gt; --help</code>, e.g.:</p>
-<div class="codewrapper sourceCode" id="cb10">
+<div class="codewrapper sourceCode" id="cb9">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git config <span class="at">-h</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git config <span class="at">--help</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git config <span class="at">-h</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git config <span class="at">--help</span></span></code></pre>
 </div>
 <p>While viewing the manual, remember the <code>:</code> is a prompt
 waiting for commands and you can press <kbd>Q</kbd> to exit the
 manual.</p>
 <p>More generally, you can get the list of available <code>git</code>
 commands and further resources of the Git manual typing:</p>
-<div class="codewrapper sourceCode" id="cb11">
+<div class="codewrapper sourceCode" id="cb10">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git help</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git help</span></code></pre>
 </div>
 </div>
 </div>
@@ -894,9 +889,9 @@ per machine.</li>
 </div>
 </div></section><section id="aio-03-create"><p>Content from <a href="03-create.html">Creating a Repository</a></p>
 <hr>
-<p> Last updated on 2023-07-21 | 
+<p> Last updated on 2023-07-25 | 
         
-        <a href="https://github.com/swcarpentry/git-novice/edit/teaching/episodes/03-create.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <a href="https://github.com/swcarpentry/git-novice/edit/main/episodes/03-create.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -1057,7 +1052,7 @@ the <code>moons</code> subdirectory?</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>No. Dracula does not need to make the <code>moons</code> subdirectory
 a Git repository because the <code>planets</code> repository can track
@@ -1108,7 +1103,7 @@ in the <code>moons</code> subdirectory?</p>
   Solution – USE WITH CAUTION!
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <div class="section level3">
 <h3 id="background">Background<a class="anchor" aria-label="anchor" href="#background"></a>
@@ -1167,9 +1162,9 @@ directory.</li>
 </div>
 </div></section><section id="aio-04-changes"><p>Content from <a href="04-changes.html">Tracking Changes</a></p>
 <hr>
-<p> Last updated on 2023-07-21 | 
+<p> Last updated on 2023-07-25 | 
         
-        <a href="https://github.com/swcarpentry/git-novice/edit/teaching/episodes/04-changes.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <a href="https://github.com/swcarpentry/git-novice/edit/main/episodes/04-changes.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -2087,7 +2082,7 @@ the local repository.</li>
 <hr>
 <p> Last updated on 2023-07-20 | 
         
-        <a href="https://github.com/swcarpentry/git-novice/edit/teaching/episodes/05-history.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <a href="https://github.com/swcarpentry/git-novice/edit/main/episodes/05-history.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -2792,7 +2787,7 @@ both commit messages and the difference between each commit.</p>
 <hr>
 <p> Last updated on 2023-07-20 | 
         
-        <a href="https://github.com/swcarpentry/git-novice/edit/teaching/episodes/06-ignore.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <a href="https://github.com/swcarpentry/git-novice/edit/main/episodes/06-ignore.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -2972,7 +2967,7 @@ nothing to commit, working tree clean</code></pre>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>If you only want to ignore the contents of
 <code>results/plots</code>, you can change your <code>.gitignore</code>
@@ -3015,7 +3010,7 @@ directory except for <code>final.dat</code>? Hint: Find out what
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>You would add the following two lines to your .gitignore:</p>
 <div class="codewrapper">
@@ -3066,7 +3061,7 @@ not <code>results/data</code>?</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>If you want to ignore the contents of <code>results/</code> but not
 those of <code>results/data/</code>, you can change your
@@ -3116,7 +3111,7 @@ ignore all <code>.dat</code> files in
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <p>Appending <code>results/data/position/gps/*.dat</code> will match
 every file in <code>results/data/position/gps</code> that ends with
@@ -3156,7 +3151,7 @@ listing the names of the corresponding folders?</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
 <div class="accordion-body">
 <p>In the <code>.gitignore</code> file, write:</p>
 <div class="codewrapper">
@@ -3197,7 +3192,7 @@ exception with the exclamation point operator.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution6" class="accordion-collapse collapse" data-bs-parent="#accordionSolution6" aria-labelledby="headingSolution6">
+<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
 <div class="accordion-body">
 <p>The <code>!</code> modifier will negate an entry from a previously
 defined ignore pattern. Because the <code>!*.dat</code> entry negates
@@ -3243,7 +3238,7 @@ via <code>.gitignore</code>.</p></li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution7" class="accordion-collapse collapse" data-bs-parent="#accordionSolution7" aria-labelledby="headingSolution7">
+<div id="collapseSolution7" class="accordion-collapse collapse" aria-labelledby="headingSolution7" data-bs-parent="#accordionSolution7">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>append either <code>log_*</code> or <code>log*</code> as a new entry
@@ -3273,7 +3268,7 @@ ignore.</li>
 <hr>
 <p> Last updated on 2023-07-20 | 
         
-        <a href="https://github.com/swcarpentry/git-novice/edit/teaching/episodes/07-github.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <a href="https://github.com/swcarpentry/git-novice/edit/main/episodes/07-github.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -3753,7 +3748,7 @@ buttons? How would you get that same information in the shell?</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>The left-most button (with the picture of a clipboard) copies the
 full identifier of the commit to the clipboard. In the shell,
@@ -3817,7 +3812,7 @@ GitHub record times, and why?</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>GitHub displays timestamps in a human readable relative format
 (i.e. “22 hours ago” or “three weeks ago”). However, if you hover over
@@ -3847,7 +3842,7 @@ push” different from “git commit”?</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>When we push changes, we’re interacting with a remote repository to
 update it with the changes we’ve made locally (often this corresponds to
@@ -3879,7 +3874,7 @@ happened when you tried to link your local and remote repositories?</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <p>In this case, we’d see a merge conflict due to unrelated histories.
 When GitHub creates a README.md file, it performs a commit in the remote
@@ -3953,7 +3948,7 @@ local repository.</li>
 <hr>
 <p> Last updated on 2023-07-20 | 
         
-        <a href="https://github.com/swcarpentry/git-novice/edit/teaching/episodes/08-collab.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <a href="https://github.com/swcarpentry/git-novice/edit/main/episodes/08-collab.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -4213,7 +4208,7 @@ has changed with command line? And on GitHub?</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>On the command line, the Collaborator can use
 <code>git fetch origin main</code> to get the remote changes into the
@@ -4280,7 +4275,7 @@ up.</li>
 <hr>
 <p> Last updated on 2023-07-20 | 
         
-        <a href="https://github.com/swcarpentry/git-novice/edit/teaching/episodes/09-conflict.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <a href="https://github.com/swcarpentry/git-novice/edit/main/episodes/09-conflict.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -4653,7 +4648,7 @@ non-textual file that is stored in version control?</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>Let’s try it. Suppose Dracula takes a picture of Martian surface and
 calls it <code>mars.jpg</code>.</p>
@@ -4898,7 +4893,7 @@ started.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <table class="table">
 <colgroup>
@@ -4969,7 +4964,7 @@ resolved.</li>
 <hr>
 <p> Last updated on 2023-07-20 | 
         
-        <a href="https://github.com/swcarpentry/git-novice/edit/teaching/episodes/10-open.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <a href="https://github.com/swcarpentry/git-novice/edit/main/episodes/10-open.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -5157,7 +5152,7 @@ closed.</li>
 <hr>
 <p> Last updated on 2023-07-20 | 
         
-        <a href="https://github.com/swcarpentry/git-novice/edit/teaching/episodes/11-licensing.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <a href="https://github.com/swcarpentry/git-novice/edit/main/episodes/11-licensing.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -5298,7 +5293,7 @@ scratch.</li>
 <hr>
 <p> Last updated on 2023-07-20 | 
         
-        <a href="https://github.com/swcarpentry/git-novice/edit/teaching/episodes/12-citation.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <a href="https://github.com/swcarpentry/git-novice/edit/main/episodes/12-citation.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -5384,7 +5379,7 @@ work cited.</li>
 <hr>
 <p> Last updated on 2023-07-20 | 
         
-        <a href="https://github.com/swcarpentry/git-novice/edit/teaching/episodes/13-hosting.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <a href="https://github.com/swcarpentry/git-novice/edit/main/episodes/13-hosting.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -5520,7 +5515,7 @@ information apply no matter where code and data are hosted.</li>
 <hr>
 <p> Last updated on 2023-07-20 | 
         
-        <a href="https://github.com/swcarpentry/git-novice/edit/teaching/episodes/14-supplemental-rstudio.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <a href="https://github.com/swcarpentry/git-novice/edit/main/episodes/14-supplemental-rstudio.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -5693,7 +5688,7 @@ directory is not version controlled.</li>
   Solution to Challenge
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>This can be done in Rstudio:</p>
 <div class="codewrapper sourceCode" id="cb1">
@@ -5738,12 +5733,12 @@ project over time.</li>
 				<p>This lesson is subject to the <a href="CODE_OF_CONDUCT.html">Code of Conduct</a></p>
         <p>
         
-        <a href="https://github.com/swcarpentry/git-novice/edit/teaching/README.md" class="external-link">Edit on GitHub</a>
+        <a href="https://github.com/swcarpentry/git-novice/edit/main/README.md" class="external-link">Edit on GitHub</a>
         
 	
-        | <a href="https://github.com/swcarpentry/git-novice/blob/teaching/CONTRIBUTING.md" class="external-link">Contributing</a> 
+        | <a href="https://github.com/swcarpentry/git-novice/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a> 
         | <a href="https://github.com/swcarpentry/git-novice/" class="external-link">Source</a></p>
-				<p><a href="https://github.com/swcarpentry/git-novice/blob/teaching/CITATION" class="external-link">Cite</a> | <a href="mailto:team@carpentries.org">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
+				<p><a href="https://github.com/swcarpentry/git-novice/blob/main/CITATION" class="external-link">Cite</a> | <a href="mailto:team@carpentries.org">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
 			</div>
 			<div class="col-md-6">
         
@@ -5774,8 +5769,8 @@ project over time.</li>
   "url": "https://swcarpentry.github.io/git-novice/aio.html",
   "identifier": "https://swcarpentry.github.io/git-novice/aio.html",
   "dateCreated": "2014-12-04",
-  "dateModified": "2023-07-21",
-  "datePublished": "2023-07-21"
+  "dateModified": "2023-07-25",
+  "datePublished": "2023-07-25"
 }
 
   </script><script>

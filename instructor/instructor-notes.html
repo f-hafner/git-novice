@@ -762,206 +762,9 @@ the only choice. It’s always interesting to mention the options to have
 web-hosted private repositories.</p>
 </section><section id="aggregate-instructor-notes"><section id="01-basics"><h2 class="section-heading"><a href="01-basics.html">Automated Version Control</a></h2>
 <hr class="half-width"></section><section id="02-setup"><h2 class="section-heading"><a href="02-setup.html">Setting Up Git</a></h2>
-<hr class="half-width">
-<h3 id="02-setup-headingInstructor1">
-<a href="02-setup.html#headingInstructor1">Instructor Note</a><a class="anchor" aria-label="anchor" href="#02-setup-headingInstructor1"></a>
-</h3>
-<p>Plan &amp; context</p>
-<p><strong>why version control?</strong></p>
-<ul>
-<li>unlimited “undo” and allows many people to work in parallel</li>
-<li>compared to git, with MS office <code>track changes</code>, you
-don’t see the past!</li>
-</ul>
-<p><strong>this episode</strong></p>
-<ul>
-<li>goal: configure git for the first time on your computer to get you
-started</li>
-<li>specifically: user details and some settings like the preferred
-editor</li>
-</ul>
-<hr>
-<br><h3 id="02-setup-headingInstructor2">
-<a href="02-setup.html#headingInstructor2">Explain</a><a class="anchor" aria-label="anchor" href="#02-setup-headingInstructor2"></a>
-</h3>
-<ul>
-<li>we will interact with github: email should be the same as in the GH
-account</li>
-<li>keep your mail private? – you can do it on github</li>
-<li>highlight the structure of git commands, they are always the same:
-<code>git verb options</code>
-<ul>
-<li>
-<code>verb</code> = what do we want to do?</li>
-<li>
-<code>options</code> = additional (necessary) information</li>
-</ul>
-</li>
-<li>skip line endings</li>
-</ul>
-<hr>
-<br><h3 id="02-setup-headingInstructor3">
-<a href="02-setup.html#headingInstructor3">Set an editor</a><a class="anchor" aria-label="anchor" href="#02-setup-headingInstructor3"></a>
-</h3>
-<p>We now configure the editor with which we edit git file. There are
-many options, but we use <code>nano</code> for this course.</p>
-<p>If you’re familiar with other editors, go ahead with a that different
-one.</p>
-<hr>
-<br><h3 id="02-setup-headingInstructor4">
-<a href="02-setup.html#headingInstructor4">Branches and naming</a><a class="anchor" aria-label="anchor" href="#02-setup-headingInstructor4"></a>
-</h3>
-<ul>
-<li>explain branches
-<ul>
-<li>a commit is one record of a source file change</li>
-<li>a commit is recorded to a “branch”</li>
-<li>for now, it is enough to know</li>
-</ul>
-</li>
-<li>in line with github, we use “main” as the default branch. this
-requires a change in the setup as follows.</li>
-</ul>
-<hr>
-<br><h3 id="02-setup-headingInstructor5">
-<a href="02-setup.html#headingInstructor5">Review our setup</a><a class="anchor" aria-label="anchor" href="#02-setup-headingInstructor5"></a>
-</h3>
-<ul>
-<li>there are two ways to review it</li>
-<li>the second is safer because we do not edit the file</li>
-<li>make sure that the user name and email are correct (your own!)</li>
-<li>if not, change with the commands from before</li>
-</ul>
-<hr>
-<br></section><section id="03-create"><h2 class="section-heading"><a href="03-create.html">Creating a Repository</a></h2>
-<hr class="half-width">
-<h3 id="03-create-headingInstructor1">
-<a href="03-create.html#headingInstructor1">Instructor Note</a><a class="anchor" aria-label="anchor" href="#03-create-headingInstructor1"></a>
-</h3>
-<p>Context &amp; plan</p>
-<p>We’ve set up git in the previous episode. Now let’s use it!</p>
-<p><strong>Goal: Create a local git repository</strong></p>
-<hr>
-<br><h3 id="03-create-headingInstructor2">
-<a href="03-create.html#headingInstructor2">What have we just done?</a><a class="anchor" aria-label="anchor" href="#03-create-headingInstructor2"></a>
-</h3>
-<ul>
-<li>created a new repository</li>
-<li>important: it will also include subdirectories and their files</li>
-<li>making a directory <code>planets</code> and making the repo are
-completely different processes</li>
-<li>do we see the changes we made?</li>
-</ul>
-<hr>
-<br><h3 id="03-create-headingInstructor3">
-<a href="03-create.html#headingInstructor3">What do we see here?</a><a class="anchor" aria-label="anchor" href="#03-create-headingInstructor3"></a>
-</h3>
-<ul>
-<li>special subdirectory <code>.git</code>
-</li>
-<li>hidden</li>
-<li>all things we do in this repo in git are stored there</li>
-<li>if we delete it, we lose it all!</li>
-</ul>
-<hr>
-<br></section><section id="04-changes"><h2 class="section-heading"><a href="04-changes.html">Tracking Changes</a></h2>
-<hr class="half-width">
-<h3 id="04-changes-headingInstructor1">
-<a href="04-changes.html#headingInstructor1">Instructor Note</a><a class="anchor" aria-label="anchor" href="#04-changes-headingInstructor1"></a>
-</h3>
-<p>Context &amp; plan</p>
-<p>After we created the repository in previous episode, we now use git
-to track changes.</p>
-<hr>
-<br><h3 id="04-changes-headingInstructor2">
-<a href="04-changes.html#headingInstructor2">Open a new file</a><a class="anchor" aria-label="anchor" href="#04-changes-headingInstructor2"></a>
-</h3>
-<p>We use the <code>nano</code> editor, but it can be any, and it does
-not have to be the same as the <code>core.editor</code> from git that we
-configured earlier.</p>
-<hr>
-<br><h3 id="04-changes-headingInstructor3">
-<a href="04-changes.html#headingInstructor3">Explain the output</a><a class="anchor" aria-label="anchor" href="#04-changes-headingInstructor3"></a>
-</h3>
-<ul>
-<li>branch</li>
-<li>no commits at the moment</li>
-<li>
-<code>mars.txt</code>: any new file that we create is not tracked by
-default by git</li>
-<li>see also the <code>git add</code> statement</li>
-</ul>
-<hr>
-<br><h3 id="04-changes-headingInstructor4">
-<a href="04-changes.html#headingInstructor4">Explain the output</a><a class="anchor" aria-label="anchor" href="#04-changes-headingInstructor4"></a>
-</h3>
-<ul>
-<li>Highlight the change in the output message</li>
-<li>but there is still no commit!</li>
-<li>can do that as follows</li>
-</ul>
-<hr>
-<br><h3 id="04-changes-headingInstructor5">
-<a href="04-changes.html#headingInstructor5">what did we just do?</a><a class="anchor" aria-label="anchor" href="#04-changes-headingInstructor5"></a>
-</h3>
-<ul>
-<li>git takes things that were <code>add</code>ed and stores a permanent
-copy in the <code>.git</code> directory</li>
-<li>this permanent copy is called a commit; see the short identifier of
-<code>[main ID] message</code>
-</li>
-<li>good commit messages?
-<ul>
-<li>brief, complete the sentence “if applied, this commit will…”</li>
-</ul>
-</li>
-</ul>
-<hr>
-<br><h3 id="04-changes-headingInstructor6">
-<a href="04-changes.html#headingInstructor6">Explain the output</a><a class="anchor" aria-label="anchor" href="#04-changes-headingInstructor6"></a>
-</h3>
-<ul>
-<li>no changes for a new commit</li>
-<li>but modified file</li>
-<li>we can add this, but we should first inspect the changes we
-made</li>
-</ul>
-<hr>
-<br><h3 id="04-changes-headingInstructor7">
-<a href="04-changes.html#headingInstructor7">what do we see? – line by line</a><a class="anchor" aria-label="anchor" href="#04-changes-headingInstructor7"></a>
-</h3>
-<ul>
-<li>output similar to the <code>diff</code> command in Unix</li>
-<li>comparing versions of the file: unique labels, generated by
-computer</li>
-<li>name of the changed file</li>
-<li>last lines most important: shows the actual changes</li>
-</ul>
-<hr>
-<br><h3 id="04-changes-headingInstructor8">
-<a href="04-changes.html#headingInstructor8">what happened?</a><a class="anchor" aria-label="anchor" href="#04-changes-headingInstructor8"></a>
-</h3>
-<ul>
-<li>we could not <code>commit</code> without having <code>added</code>
-anything</li>
-<li>allows to commit changes in stages
-<ul>
-<li>we added text and a new reference to our thesis</li>
-<li>but we have not finished the text bit</li>
-<li>first update bibliographic database</li>
-<li>commit the change in the thesis later on</li>
-</ul>
-</li>
-</ul>
-<p><strong>background: git staging area. what is it and why
-useful?</strong></p>
-<ul>
-<li>intermediate step between file changes and a commit</li>
-<li>we could commit everything at once, but often it is better to stage
-things manually</li>
-</ul>
-<hr>
-<br></section><section id="05-history"><h2 class="section-heading"><a href="05-history.html">Exploring History</a></h2>
+<hr class="half-width"></section><section id="03-create"><h2 class="section-heading"><a href="03-create.html">Creating a Repository</a></h2>
+<hr class="half-width"></section><section id="04-changes"><h2 class="section-heading"><a href="04-changes.html">Tracking Changes</a></h2>
+<hr class="half-width"></section><section id="05-history"><h2 class="section-heading"><a href="05-history.html">Exploring History</a></h2>
 <hr class="half-width"></section><section id="06-ignore"><h2 class="section-heading"><a href="06-ignore.html">Ignoring Things</a></h2>
 <hr class="half-width"></section><section id="07-github"><h2 class="section-heading"><a href="07-github.html">Remotes in GitHub</a></h2>
 <hr class="half-width"></section><section id="08-collab"><h2 class="section-heading"><a href="08-collab.html">Collaborating</a></h2>
@@ -984,12 +787,12 @@ things manually</li>
 				<p>This lesson is subject to the <a href="CODE_OF_CONDUCT.html">Code of Conduct</a></p>
         <p>
         
-        <a href="https://github.com/swcarpentry/git-novice/edit/teaching/README.md" class="external-link">Edit on GitHub</a>
+        <a href="https://github.com/swcarpentry/git-novice/edit/main/README.md" class="external-link">Edit on GitHub</a>
         
 	
-        | <a href="https://github.com/swcarpentry/git-novice/blob/teaching/CONTRIBUTING.md" class="external-link">Contributing</a> 
+        | <a href="https://github.com/swcarpentry/git-novice/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a> 
         | <a href="https://github.com/swcarpentry/git-novice/" class="external-link">Source</a></p>
-				<p><a href="https://github.com/swcarpentry/git-novice/blob/teaching/CITATION" class="external-link">Cite</a> | <a href="mailto:team@carpentries.org">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
+				<p><a href="https://github.com/swcarpentry/git-novice/blob/main/CITATION" class="external-link">Cite</a> | <a href="mailto:team@carpentries.org">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
 			</div>
 			<div class="col-md-6">
         
@@ -1020,8 +823,8 @@ things manually</li>
   "url": "https://swcarpentry.github.io/git-novice/instructor/instructor-notes.html",
   "identifier": "https://swcarpentry.github.io/git-novice/instructor/instructor-notes.html",
   "dateCreated": "2014-12-04",
-  "dateModified": "2023-07-21",
-  "datePublished": "2023-07-21"
+  "dateModified": "2023-07-25",
+  "datePublished": "2023-07-25"
 }
 
   </script><script>
