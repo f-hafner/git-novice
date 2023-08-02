@@ -315,9 +315,9 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Setting Up Git</h1>
-        <p> Last updated on 2023-07-25 | 
+        <p> Last updated on 2023-08-02 | 
         
-        <a href="https://github.com/swcarpentry/git-novice/edit/main/episodes/02-setup.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <a href="https://github.com/swcarpentry/git-novice/edit/teaching/episodes/02-setup.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
         
         
@@ -363,12 +363,14 @@ project).</li>
 actually want to do and <code>options</code> is additional optional
 information which may be needed for the <code>verb</code>. So here is
 how Dracula sets up his new laptop:</p>
+
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git config <span class="at">--global</span> user.name <span class="st">"Vlad Dracula"</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git config <span class="at">--global</span> user.email <span class="st">"vlad@tran.sylvan.ia"</span></span></code></pre>
 </div>
+
 <p>Please use your own name and email address instead of Dracula’s. This
 user name and email will be associated with your subsequent Git
 activity, which means that any changes pushed to <a href="https://github.com/" class="external-link">GitHub</a>, <a href="https://bitbucket.org/" class="external-link">BitBucket</a>, <a href="https://gitlab.com/" class="external-link">GitLab</a> or another Git host server after
@@ -463,6 +465,12 @@ table:</p>
 <td align="left"><code>$ git config --global core.editor "code --wait"</code></td>
 </tr></tbody></table><p>It is possible to reconfigure the text editor for Git whenever you
 want to change it.</p>
+
+<div class="codewrapper sourceCode" id="cb4">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git config <span class="at">--global</span> core.editor <span class="st">"nano -w"</span>  </span></code></pre>
+</div>
 <div id="exiting-vim" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -484,10 +492,11 @@ hit <kbd>Enter</kbd> or <kbd>↵</kbd> or on Macs, <kbd>Return</kbd>.</p>
 when you initialize any new repository. Dracula decides to use that
 feature to set it to <code>main</code> so it matches the cloud service
 he will eventually use.</p>
-<div class="codewrapper sourceCode" id="cb4">
+
+<div class="codewrapper sourceCode" id="cb5">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git config <span class="at">--global</span> init.defaultBranch main</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git config <span class="at">--global</span> init.defaultBranch main</span></code></pre>
 </div>
 <div id="default-git-branch-naming" class="callout callout">
 <div class="callout-square">
@@ -519,23 +528,24 @@ configuration, the <code>init.defaultBranch</code> value defaults to
 </div>
 </div>
 </div>
+
 <p>The five commands we just ran above only need to be run once: the
 flag <code>--global</code> tells Git to use the settings for every
 project, in your user account, on this computer.</p>
 <p>Let’s review those settings and test our <code>core.editor</code>
 right away:</p>
-<div class="codewrapper sourceCode" id="cb5">
+<div class="codewrapper sourceCode" id="cb6">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git config <span class="at">--global</span> <span class="at">--edit</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git config <span class="at">--global</span> <span class="at">--edit</span></span></code></pre>
 </div>
 <p>Let’s close the file without making any additional changes. Remember,
 since typos in the config file will cause issues, it’s safer to view the
 configuration with:</p>
-<div class="codewrapper sourceCode" id="cb6">
+<div class="codewrapper sourceCode" id="cb7">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git config <span class="at">--list</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git config <span class="at">--list</span></span></code></pre>
 </div>
 <p>And if necessary, change your configuration using the same commands
 to choose another editor or update your email address. This can be done
@@ -550,18 +560,18 @@ as many times as you want.</p>
 <div class="callout-content">
 <p>In some networks you need to use a <a href="https://en.wikipedia.org/wiki/Proxy_server" class="external-link">proxy</a>. If this is
 the case, you may also need to tell Git about the proxy:</p>
-<div class="codewrapper sourceCode" id="cb7">
-<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git config <span class="at">--global</span> http.proxy proxy-url</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git config <span class="at">--global</span> https.proxy proxy-url</span></code></pre>
-</div>
-<p>To disable the proxy, use</p>
 <div class="codewrapper sourceCode" id="cb8">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git config <span class="at">--global</span> <span class="at">--unset</span> http.proxy</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git config <span class="at">--global</span> <span class="at">--unset</span> https.proxy</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git config <span class="at">--global</span> http.proxy proxy-url</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git config <span class="at">--global</span> https.proxy proxy-url</span></code></pre>
+</div>
+<p>To disable the proxy, use</p>
+<div class="codewrapper sourceCode" id="cb9">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git config <span class="at">--global</span> <span class="at">--unset</span> http.proxy</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git config <span class="at">--global</span> <span class="at">--unset</span> https.proxy</span></code></pre>
 </div>
 </div>
 </div>
@@ -578,21 +588,21 @@ the case, you may also need to tell Git about the proxy:</p>
 <code>git</code> command, you can access the relevant list of options
 typing <code>git &lt;command&gt; -h</code> or access the corresponding
 Git manual by typing <code>git &lt;command&gt; --help</code>, e.g.:</p>
-<div class="codewrapper sourceCode" id="cb9">
+<div class="codewrapper sourceCode" id="cb10">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git config <span class="at">-h</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git config <span class="at">--help</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git config <span class="at">-h</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git config <span class="at">--help</span></span></code></pre>
 </div>
 <p>While viewing the manual, remember the <code>:</code> is a prompt
 waiting for commands and you can press <kbd>Q</kbd> to exit the
 manual.</p>
 <p>More generally, you can get the list of available <code>git</code>
 commands and further resources of the Git manual typing:</p>
-<div class="codewrapper sourceCode" id="cb10">
+<div class="codewrapper sourceCode" id="cb11">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git help</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git help</span></code></pre>
 </div>
 </div>
 </div>
@@ -632,12 +642,12 @@ per machine.</li>
 				<p>This lesson is subject to the <a href="CODE_OF_CONDUCT.html">Code of Conduct</a></p>
         <p>
         
-        <a href="https://github.com/swcarpentry/git-novice/edit/main/episodes/02-setup.md" class="external-link">Edit on GitHub</a>
+        <a href="https://github.com/swcarpentry/git-novice/edit/teaching/episodes/02-setup.md" class="external-link">Edit on GitHub</a>
         
 	
-        | <a href="https://github.com/swcarpentry/git-novice/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a> 
+        | <a href="https://github.com/swcarpentry/git-novice/blob/teaching/CONTRIBUTING.md" class="external-link">Contributing</a> 
         | <a href="https://github.com/swcarpentry/git-novice/" class="external-link">Source</a></p>
-				<p><a href="https://github.com/swcarpentry/git-novice/blob/main/CITATION" class="external-link">Cite</a> | <a href="mailto:team@carpentries.org">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
+				<p><a href="https://github.com/swcarpentry/git-novice/blob/teaching/CITATION" class="external-link">Cite</a> | <a href="mailto:team@carpentries.org">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
 			</div>
 			<div class="col-md-6">
         
@@ -667,7 +677,7 @@ per machine.</li>
   "url": "https://swcarpentry.github.io/git-novice/02-setup.html",
   "identifier": "https://swcarpentry.github.io/git-novice/02-setup.html",
   "dateCreated": "2014-12-04",
-  "dateModified": "2023-07-25",
+  "dateModified": "2023-08-02",
   "datePublished": "2023-08-02"
 }
 

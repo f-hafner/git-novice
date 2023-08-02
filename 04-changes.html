@@ -315,9 +315,9 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Tracking Changes</h1>
-        <p> Last updated on 2023-07-25 | 
+        <p> Last updated on 2023-08-02 | 
         
-        <a href="https://github.com/swcarpentry/git-novice/edit/main/episodes/04-changes.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <a href="https://github.com/swcarpentry/git-novice/edit/teaching/episodes/04-changes.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
         
         
@@ -354,6 +354,7 @@ messages.</li>
 </div>
 </div>
 </div>
+
 <p>First let’s make sure we’re still in the right directory. You should
 be in the <code>planets</code> directory.</p>
 <div class="codewrapper sourceCode" id="cb1">
@@ -371,6 +372,7 @@ choose (it might not be <code>nano</code>). For a refresher on text
 editors, check out <a href="https://swcarpentry.github.io/shell-novice/03-create.html#which-editor" class="external-link">“Which
 Editor?”</a> in <a href="https://swcarpentry.github.io/shell-novice/" class="external-link">The Unix Shell</a>
 lesson.</p>
+
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -413,6 +415,7 @@ noticed the new file:</p>
 </h3>
 <pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git status</span></code></pre>
 </div>
+
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -454,6 +457,7 @@ Changes to be committed:
 	new file:   mars.txt
 </code></pre>
 </div>
+
 <p>Git now knows that it’s supposed to keep track of
 <code>mars.txt</code>, but it hasn’t recorded these changes as a commit
 yet. To get it to do that, we need to run one more command:</p>
@@ -469,6 +473,7 @@ yet. To get it to do that, we need to run one more command:</p>
  1 file changed, 1 insertion(+)
  create mode 100644 mars.txt</code></pre>
 </div>
+
 <p>When we run <code>git commit</code>, Git takes everything we have
 told it to save by using <code>git add</code> and stores a copy
 permanently inside the special <code>.git</code> directory. This
@@ -575,6 +580,7 @@ Changes not staged for commit:
 
 no changes added to commit (use "git add" and/or "git commit -a")</code></pre>
 </div>
+
 <p>The last line is the key phrase: “no changes added to commit”. We
 have changed this file, but we haven’t told Git we will want to save
 those changes (which we do with <code>git add</code>) nor have we saved
@@ -599,6 +605,7 @@ index df0654a..315bf3a 100644
  Cold and dry, but everything is my favorite color
 +The two moons may be a problem for Wolfman</code></pre>
 </div>
+
 <p>The output is cryptic because it is actually a series of commands for
 tools like editors and <code>patch</code> telling them how to
 reconstruct one file given the other. If we break it down into
@@ -647,6 +654,7 @@ first. Let’s fix that:</p>
 <pre class="output" tabindex="0"><code>[main 34961b1] Add concerns about effects of Mars' moons on Wolfman
  1 file changed, 1 insertion(+)</code></pre>
 </div>
+
 <p>Git insists that we add files to the set we want to commit before
 actually committing anything. This allows us to commit our changes in
 stages and capture changes in logical portions rather than only large
@@ -973,7 +981,7 @@ mars.txt”</li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>Answer 1 is not descriptive enough, and the purpose of the commit is
 unclear; and answer 2 is redundant to using “git diff” to see what
@@ -1025,7 +1033,7 @@ imperative.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal"><li>Would only create a commit if files have already been staged.</li>
 <li>Would try to create a new repository.</li>
@@ -1063,7 +1071,7 @@ changes.</li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>The output below from <code>cat mars.txt</code> reflects only content
 added during this exercise. Your output may vary.</p>
@@ -1150,7 +1158,7 @@ state.</li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <p>If needed, move out of the <code>planets</code> folder:</p>
 <div class="codewrapper sourceCode" id="cb64">
@@ -1235,12 +1243,12 @@ the local repository.</li>
 				<p>This lesson is subject to the <a href="CODE_OF_CONDUCT.html">Code of Conduct</a></p>
         <p>
         
-        <a href="https://github.com/swcarpentry/git-novice/edit/main/episodes/04-changes.md" class="external-link">Edit on GitHub</a>
+        <a href="https://github.com/swcarpentry/git-novice/edit/teaching/episodes/04-changes.md" class="external-link">Edit on GitHub</a>
         
 	
-        | <a href="https://github.com/swcarpentry/git-novice/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a> 
+        | <a href="https://github.com/swcarpentry/git-novice/blob/teaching/CONTRIBUTING.md" class="external-link">Contributing</a> 
         | <a href="https://github.com/swcarpentry/git-novice/" class="external-link">Source</a></p>
-				<p><a href="https://github.com/swcarpentry/git-novice/blob/main/CITATION" class="external-link">Cite</a> | <a href="mailto:team@carpentries.org">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
+				<p><a href="https://github.com/swcarpentry/git-novice/blob/teaching/CITATION" class="external-link">Cite</a> | <a href="mailto:team@carpentries.org">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
 			</div>
 			<div class="col-md-6">
         
@@ -1270,7 +1278,7 @@ the local repository.</li>
   "url": "https://swcarpentry.github.io/git-novice/04-changes.html",
   "identifier": "https://swcarpentry.github.io/git-novice/04-changes.html",
   "dateCreated": "2014-12-04",
-  "dateModified": "2023-07-25",
+  "dateModified": "2023-08-02",
   "datePublished": "2023-08-02"
 }
 
