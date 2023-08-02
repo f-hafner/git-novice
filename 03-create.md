@@ -39,6 +39,17 @@ Courtesy NASA/JPL-Caltech.
 
 First, let's create a new directory in the `Desktop` folder for our work and then change the current working directory to the newly created one:
 
+::::::::::::::::::::::::::::::::::::: instructor
+
+Context & plan
+
+We've set up git in the previous episode. Now let's use it!
+
+**Goal: Create a local git repository**
+
+:::::::::::::::::::::::::::::::::::::::::::::::::
+
+
 ```bash
 $ cd ~/Desktop
 $ mkdir planets
@@ -51,6 +62,18 @@ Then we tell Git to make `planets` a [repository](../learners/reference.md#repos
 ```bash
 $ git init
 ```
+
+::::::::::::::::::::::::::::::::::::: instructor
+
+## What have we just done?
+
+- created a new repository
+- important: it will also include subdirectories and their files
+- making a directory `planets` and making the repo are completely different processes
+- do we see the changes we made?
+
+:::::::::::::::::::::::::::::::::::::::::::::::::
+
 
 It is important to note that `git init` will create a repository that
 can include subdirectories and their files---there is no need to create
@@ -76,6 +99,17 @@ $ ls -a
 ```output
 .	..	.git
 ```
+
+::::::::::::::::::::::::::::::::::::: instructor
+
+## What do we see here?
+
+- special subdirectory `.git`
+- hidden
+- all things we do in this repo in git are stored there
+- if we delete it, we lose it all!
+
+:::::::::::::::::::::::::::::::::::::::::::::::::
 
 Git uses this special subdirectory to store all the information about the project,
 including the tracked files and sub-directories located within the project's directory.

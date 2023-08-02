@@ -29,10 +29,40 @@ On a command line, Git commands are written as `git verb options`,
 where `verb` is what we actually want to do and `options` is additional optional information which may be needed for the `verb`. So here is how
 Dracula sets up his new laptop:
 
+::::::::::::::::::::::::::::::::::::: instructor
+
+Plan & context
+
+**why version control?**
+
+- unlimited "undo" and allows many people to work in parallel
+- compared to git, with MS office `track changes`, you don't see the past!
+
+**this episode**
+
+- goal: configure git for the first time on your computer to get you started 
+- specifically: user details and some settings like the preferred editor
+
+:::::::::::::::::::::::::::::::::::::::::::::::::
+
 ```bash
 $ git config --global user.name "Vlad Dracula"
 $ git config --global user.email "vlad@tran.sylvan.ia"
 ```
+
+::::::::::::::::::::::::::::::::::::: instructor
+
+## Explain
+
+- we will interact with github: email should be the same as in the GH account
+- keep your mail private? -- you can do it on github 
+- highlight the structure of git commands, they are always the same: `git verb options`
+    - `verb` = what do we want to do?
+    - `options` = additional (necessary) information 
+- skip line endings
+
+:::::::::::::::::::::::::::::::::::::::::::::::::
+
 
 Please use your own name and email address instead of Dracula's. This user name and email will be associated with your subsequent Git activity,
 which means that any changes pushed to
@@ -106,6 +136,22 @@ Dracula also has to set his favorite text editor, following this table:
 
 It is possible to reconfigure the text editor for Git whenever you want to change it.
 
+::::::::::::::::::::::::::::::::::::: instructor
+
+## Set an editor
+
+We now configure the editor with which we edit git file. 
+There are many options, but we use `nano` for this course.
+
+If you're familiar with other editors, go ahead with a that different one.
+
+:::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+```bash
+$ git config --global core.editor "nano -w"  
+```
+
 :::::::::::::::::::::::::::::::::::::::::  callout
 
 ## Exiting Vim
@@ -120,6 +166,19 @@ If you want to save your changes and quit, press <kbd>Esc</kbd> then type `:wq` 
 Git (2.28+) allows configuration of the name of the branch created when you
 initialize any new repository.  Dracula decides to use that feature to set it to `main` so
 it matches the cloud service he will eventually use.
+
+::::::::::::::::::::::::::::::::::::: instructor
+
+## Branches and naming
+
+- explain branches
+    - a commit is one record of a source file change 
+    - a commit is recorded to a "branch"
+    - for now, it is enough to know 
+- in line with github, we use "main" as the default branch. this requires a change in the setup as follows.
+
+:::::::::::::::::::::::::::::::::::::::::::::::::
+
 
 ```bash
 $ git config --global init.defaultBranch main
@@ -147,6 +206,18 @@ command for this is in the next episode.  Note that if this value is unset in yo
 configuration, the `init.defaultBranch` value defaults to `master`.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::: instructor
+
+## Review our setup
+
+- there are two ways to review it
+- the second is safer because we do not edit the file 
+- make sure that the user name and email are correct (your own!)
+- if not, change with the commands from before
+
+:::::::::::::::::::::::::::::::::::::::::::::::::
+
 
 The five commands we just ran above only need to be run once: the flag `--global` tells Git
 to use the settings for every project, in your user account, on this computer.
