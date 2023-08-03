@@ -173,7 +173,7 @@ it matches the cloud service he will eventually use.
 
 - explain branches
     - a commit is one record of a source file change 
-    - a commit is recorded to a "branch"
+    - a commit is recorded to a "branch"; a branch is a collection of sequential commits.
     - for now, it is enough to know 
 - in line with github, we use "main" as the default branch. this requires a change in the setup as follows.
 

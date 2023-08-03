@@ -378,16 +378,19 @@ $ git commit -m "Add concerns about effects of Mars' moons on Wolfman"
 ## what happened?
 
 - we could not `commit` without having `added` anything
+
+**background: git staging area. what is it and why useful?**
+
+- intermediate step between file changes and a commit 
+- we could commit everything at once, but often it is better to stage things manually
+
+**Implication**
 - allows to commit changes in stages
   - we added text and a new reference to our thesis
   - but we have not finished the text bit
   - first update bibliographic database
   - commit the change in the thesis later on
 
-**background: git staging area. what is it and why useful?**
-
-- intermediate step between file changes and a commit 
-- we could commit everything at once, but often it is better to stage things manually
 
 :::::::::::::::::::::::::::::::::::::::::::::::::
 
